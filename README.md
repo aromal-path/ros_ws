@@ -31,19 +31,25 @@ source devel/setup.bash
 ```
 
 3️⃣ Running Nodes
-  - Launch the `add_two_ints` server node (this will implicitly start `roscore` if not running):
+#### From a terminal, with `devel/setup.bash` properly sourced as above, launch the `add_two_ints` server node
+  - This will implicitly start `roscore` if not running.
+  - This node will keep running in the terminal listening for service calls till it is killed by `ctrl+c`.
 
 ```sh
 roslaunch my_robot_package add_two_ints.launch
 ```
 
-  - Run the `add_two_ints` client node (this will run once, calls the server, prints the result and exit):
+#### From another terminal, with `devel/setup.bash` properly sourced as above, run the `add_two_ints` client node
+  - This will run once, calls the server, prints the result and exit.
+  - This can be repeated, passing in different numbers to add.
 
 ```sh
 ROS_NAMESPACE=/my_robot rosrun my_robot_package add_two_ints_client 100 5
 ```
 
-  - Launch the `test_params` node (this will run once, prints the parameter values and exit):
+#### Launch the `test_params` node
+  - This will run once, prints the parameter values and exit.
+  - This can be repeated.
 
 ```sh
 roslaunch my_robot_package test_params.launch
