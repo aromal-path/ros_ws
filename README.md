@@ -4,6 +4,7 @@ This is a ROS Noetic workspace for developing and testing robotic applications.
 
 ## 📌 Project Structure
 
+```
 ros_ws/ 
 │── src/ # Source code for ROS packages
 │── build/ # Build directory (ignored in Git)
@@ -11,6 +12,7 @@ ros_ws/
 │── install/ # Install space (optional)
 │── CMakeLists.txt # CMake entry point for the workspace
 │── README.md # This file
+```
 
 
 ## 🚀 How to Use
