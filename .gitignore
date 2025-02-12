@@ -1,0 +1,30 @@
+# Ignore build and devel spaces
+build/
+devel/
+install/
+log/
+logs/
+
+# Ignore CMake generated files
+CMakeLists.txt.user
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.swp
+*.swo
+
+# Ignore ROS-specific temporary files
+*.pyc
+*.pyo
+*.bak
+*.orig
+
+# Ignore hidden system files
+.DS_Store
+.vscode/
+.idea/
+*.iml
+
+# Ignore workspace-level hidden files
+catkin_generated/
+.catkin_tools/

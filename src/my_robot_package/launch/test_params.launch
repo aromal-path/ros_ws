@@ -1,0 +1,18 @@
+<launch>
+    <!-- Define global parameters -->
+    <param name="/robot_speed" value="1.5"/>
+    <param name="/robot_name" value="welding_robot_global"/>
+
+    <!-- Define a namespace for the node -->
+    <group ns="my_robot">
+      <!-- Define parameters for the namespace -->
+      <param name="robot_speed" value="2.5"/>
+      <param name="robot_name" value="welding_robot_ns"/>
+
+      <node name="test_params_node" pkg="my_robot_package" type="test_params" output="screen">
+        <!-- Define private parameters for the node -->
+        <param name="robot_speed" value="3.5"/>
+        <param name="robot_name" value="welding_robot_private"/>
+      </node>
+    </group>
+</launch>

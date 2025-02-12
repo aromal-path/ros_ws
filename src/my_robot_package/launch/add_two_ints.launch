@@ -1,0 +1,6 @@
+<launch>
+    <!-- Define a namespace for the service -->
+    <group ns="my_robot">
+      <node name="add_two_ints_server_node" pkg="my_robot_package" type="add_two_ints_server" output="screen"/>
+    </group>
+</launch>
